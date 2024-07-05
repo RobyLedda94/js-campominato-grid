@@ -25,6 +25,8 @@ btn.addEventListener('click', function(){
 for (let i = 0; i<100; i++){
     // VARIABILE CREAZIONE ELEMENTO
     let currentSquare = document.createElement('div');
+    // ASSEGNO LA CLASSE SQUARE ALL'ELEMENTO CREATO
+    currentSquare.classList.add('square');
     // VARIABILE PER CREARE IL TESTO ALL'INTERNO DELL'ELEMTO CREATO
     currentSquare.innerText = i + 1;
     // APPENDO ALL'ELEMENTO GRID GLI ELEMENTI CREATI TRAMITE VARIABILE NEL FILE JS
