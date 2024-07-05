@@ -23,11 +23,12 @@ header{
     font-size: 20px;
     cursor: pointer;
     border: 1px solid rgb(161, 97, 0);
+    transition: all 0.3s;
 }
 
 #start:hover{
     transform: scale(1.05);
-    background-color: rgba(161, 97, 0, 0.342);
+    background: linear-gradient(#000000, rgb(161, 97, 0));
     color: rgb(228, 154, 16);
     border-color: rgb(228, 154, 16);
 }
@@ -51,6 +52,8 @@ header{
     border: 1px solid rgb(161, 97, 0);
     color: rgb(255, 153, 0);
     background-color:#000000;
+    transition: all 0.3s;
+
 }
 
 .clicked{
