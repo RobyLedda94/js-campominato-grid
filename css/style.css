@@ -23,3 +23,7 @@
     border: 1px solid black;
     background-color:#8d8282;
 }
+
+.clicked{
+    background-color: lightblue;
+}
