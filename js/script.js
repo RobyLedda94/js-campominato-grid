@@ -27,5 +27,7 @@ for (let i = 0; i<100; i++){
     let currentSquare = document.createElement('div');
     // VARIABILE PER CREARE IL TESTO ALL'INTERNO DELL'ELEMTO CREATO
     currentSquare.innerText = i + 1;
+    // APPENDO ALL'ELEMENTO GRID GLI ELEMENTI CREATI TRAMITE VARIABILE NEL FILE JS
+    grid.append(currentSquare);
     
 }
