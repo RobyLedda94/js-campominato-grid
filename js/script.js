@@ -24,6 +24,7 @@ function createSquare(numero){
         // AGGIUNGO L'EVENTO CLICK ALLA CELLA (FUNZIONE ANONIMA)
     currentSquare.addEventListener('click', function (){
         console.log(this);
+        this.classList.toggle('clicked');
     });
     return currentSquare;
 
