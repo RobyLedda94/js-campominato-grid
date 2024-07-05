@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+.bg{
+    background-color: black;
+}
+
+header{
+  padding: 20px 10px;
+  margin-bottom: 20px;   
+}
+
+
+
+#start{
+    border: none;
+    background-color:  #000000;
+    color: rgb(43, 255, 0);
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid rgb(43, 255, 0);
+}
+
 
 #grid{
     max-width: 1200px;
@@ -20,10 +41,11 @@
     align-items: center;
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid black;
-    background-color:#8d8282;
+    border: 1px solid rgb(43, 255, 0);
+    color: rgb(43, 255, 0);
+    background-color:#000000;
 }
 
 .clicked{
-    background-color: lightblue;
+    background-color: rgba(105, 211, 19, 0.705);
 }
