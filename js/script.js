@@ -21,6 +21,10 @@ function createSquare(numero){
     currentSquare.classList.add('square');
         // VARIABILE PER CREARE IL TESTO ALL'INTERNO DELL'ELEMTO CREATO
     currentSquare.innerText = numero + 1;
+            // AGGIUNGO L'EVENTO CLICK ALLA CELLA
+    currentSquare.addEventListener('click', function (){
+        console.log('prova');
+    });
     return currentSquare;
 
 }
@@ -32,6 +36,7 @@ btn.addEventListener('click', function(){
     grid.innerHTML = '';
     for (let i = 0; i<100; i++){
         let square = createSquare(i);
+
         // APPENDO ALL'ELEMENTO GRID GLI ELEMENTI CREATI TRAMITE VARIABILE NEL FILE JS
         grid.append(square);    
     }
