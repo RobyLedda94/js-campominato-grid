@@ -28,12 +28,12 @@ function createSquare(numero){
 // DICO AL BOTTONE DI RESTARE IN ATTESA DELL'EVENTO 'CLICK'
 
 btn.addEventListener('click', function(){
+    // PULISCO LA GRIGLIA PRIMA DI CREARNE UNA NUOVA
+    grid.innerHTML = '';
     for (let i = 0; i<100; i++){
         let square = createSquare(i);
         // APPENDO ALL'ELEMENTO GRID GLI ELEMENTI CREATI TRAMITE VARIABILE NEL FILE JS
-        grid.append(square);
-        
-        
+        grid.append(square);    
     }
 })
 
