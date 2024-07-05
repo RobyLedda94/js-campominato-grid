@@ -12,3 +12,9 @@ const btn = document.getElementById('start');
 // RECUPERO L'ELEMENTO CON ID GRID DAL DOM
 
 const grid = document.getElementById('grid');
+
+// DICO AL BOTTONE DI RESTARE IN ATTESA DELL'EVENTO 'CLICK'
+
+btn.addEventListener('click', function(){
+
+})
