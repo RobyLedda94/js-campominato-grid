@@ -13,23 +13,32 @@ const btn = document.getElementById('start');
 
 const grid = document.getElementById('grid');
 
+// DEFINISCO LA FUNZIONE CHE CREA I QUADRATI NELLA GRIGLIA
+function createSquare(numero){
+        // VARIABILE CREAZIONE ELEMENTO
+    let currentSquare = document.createElement('div');
+        // ASSEGNO LA CLASSE SQUARE ALL'ELEMENTO CREATO
+    currentSquare.classList.add('square');
+        // VARIABILE PER CREARE IL TESTO ALL'INTERNO DELL'ELEMTO CREATO
+    currentSquare.innerText = numero + 1;
+    return currentSquare;
+
+}
+
 // DICO AL BOTTONE DI RESTARE IN ATTESA DELL'EVENTO 'CLICK'
 
 btn.addEventListener('click', function(){
-
+    for (let i = 0; i<100; i++){
+        let square = createSquare(i);
+        // APPENDO ALL'ELEMENTO GRID GLI ELEMENTI CREATI TRAMITE VARIABILE NEL FILE JS
+        grid.append(square);
+        
+        
+    }
 })
+
+
 
 
 // ESEGUO UN CICLO DI 100 ITERAZIONI PER CREARE UNA GRIGLIA 10X10
 
-for (let i = 0; i<100; i++){
-    // VARIABILE CREAZIONE ELEMENTO
-    let currentSquare = document.createElement('div');
-    // ASSEGNO LA CLASSE SQUARE ALL'ELEMENTO CREATO
-    currentSquare.classList.add('square');
-    // VARIABILE PER CREARE IL TESTO ALL'INTERNO DELL'ELEMTO CREATO
-    currentSquare.innerText = i + 1;
-    // APPENDO ALL'ELEMENTO GRID GLI ELEMENTI CREATI TRAMITE VARIABILE NEL FILE JS
-    grid.append(currentSquare);
-    
-}
