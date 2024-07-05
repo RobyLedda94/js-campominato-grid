@@ -18,11 +18,18 @@ header{
 #start{
     border: none;
     background-color:  #000000;
-    color: rgb(43, 255, 0);
+    color: rgb(161, 97, 0);
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
-    border: 1px solid rgb(43, 255, 0);
+    border: 1px solid rgb(161, 97, 0);
+}
+
+#start:hover{
+    transform: scale(1.05);
+    background-color: rgba(161, 97, 0, 0.342);
+    color: rgb(228, 154, 16);
+    border-color: rgb(228, 154, 16);
 }
 
 
@@ -41,11 +48,11 @@ header{
     align-items: center;
     width: calc(100% / 10);
     height: calc(100% / 10);
-    border: 1px solid rgb(43, 255, 0);
-    color: rgb(43, 255, 0);
+    border: 1px solid rgb(161, 97, 0);
+    color: rgb(255, 153, 0);
     background-color:#000000;
 }
 
 .clicked{
-    background-color: rgba(105, 211, 19, 0.705);
+    background-color: rgba(211, 160, 19, 0.507);
 }
