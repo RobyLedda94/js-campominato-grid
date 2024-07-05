@@ -18,3 +18,11 @@ const grid = document.getElementById('grid');
 btn.addEventListener('click', function(){
 
 })
+
+
+// ESEGUO UN CICLO DI 100 ITERAZIONI PER CREARE UNA GRIGLIA 10X10
+
+for (let i = 0; i<100; i++){
+    // VARIABILE CREAZIONE ELEMENTO
+    let currentSquare = document.createElement('div');
+}
